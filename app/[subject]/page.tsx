@@ -116,34 +116,36 @@ export default function SubjectPage({ params }: { params: { subject: string } })
         </div>
 
         {/* Additional Reference Materials Section */}
-        <div className="p-4 border-2 border-gray-800 bg-gray-100">
-          <h3 className="text-xl font-mono font-bold mb-3 border-b border-gray-400 pb-2">
-            ADDITIONAL REFERENCE MATERIALS
-          </h3>
-          <p className="font-mono mb-4">
-            Access these supplementary resources for a deeper understanding of each module.
-          </p>
+        {subject.showAdditionalMaterials !== false && (
+          <div className="p-4 border-2 border-gray-800 bg-gray-100">
+            <h3 className="text-xl font-mono font-bold mb-3 border-b border-gray-400 pb-2">
+              ADDITIONAL REFERENCE MATERIALS
+            </h3>
+            <p className="font-mono mb-4">
+              Access these supplementary resources for a deeper understanding of each module.
+            </p>
 
-          {subject.moduleList.map((module, moduleIndex) => (
-            <div key={moduleIndex} className="mb-4 last:mb-0">
-              <h4 className="font-mono font-bold mb-2">
-                Module {moduleIndex + 1}: {module.title}
-              </h4>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mb-2">
-                {[1, 2, 3, 4, 5].map((docNum) => (
-                  <a
-                    key={docNum}
-                    href={`/pdfs/${subject.slug}/preparation/module${moduleIndex + 1}-ref${docNum}.pdf`}
-                    download
-                    className="retro-button text-sm py-1"
-                  >
-                    Reference Doc {docNum}
-                  </a>
-                ))}
+            {subject.moduleList.map((module, moduleIndex) => (
+              <div key={moduleIndex} className="mb-4 last:mb-0">
+                <h4 className="font-mono font-bold mb-2">
+                  Module {moduleIndex + 1}: {module.title}
+                </h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mb-2">
+                  {[1, 2, 3, 4, 5].map((docNum) => (
+                    <a
+                      key={docNum}
+                      href={`/pdfs/${subject.slug}/preparation/module${moduleIndex + 1}-ref${docNum}.pdf`}
+                      download
+                      className="retro-button text-sm py-1"
+                    >
+                      Reference Doc {docNum}
+                    </a>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
       </section>
 
       <footer className="mt-12 pt-4 border-t-2 border-gray-400 text-center font-mono text-sm">

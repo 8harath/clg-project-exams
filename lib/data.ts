@@ -8,36 +8,37 @@ export const subjectData = [
       {
         title: "Evolution of Indian Constitution",
         description: "Evolution of the Constitution, Objective Resolution, Preamble, Fundamental Rights, Fundamental Duties, and Directive Principles of State Policy.",
-        presentation: true,
+        presentation: false,
       },
       {
         title: "Union Legislature and State Legislature",
         description: "Indian Parliament (Lok Sabha and Rajya Sabha), State Legislative bodies, lawmaking procedures, budget processes, and committee systems.",
-        presentation: true,
+        presentation: false,
       },
       {
         title: "The Union and State Executive",
         description: "President, Vice-President, Prime Minister, Union Council of Ministers, Governor, Chief Minister, and State Council of Ministers.",
-        presentation: true,
+        presentation: false,
       },
       {
         title: "The Judiciary",
         description: "Supreme Court, High Courts, Judicial Review, Writ powers, Judicial Activism, Lok Adalats, and Public Interest Litigation.",
-        presentation: true,
+        presentation: false,
       },
       {
         title: "Issues",
         description: "Indian Federalism, distribution of powers, Human Rights, Environmental Protection, special provisions for Dalits, Backward Classes, Children, Women, and Secularism in India.",
-        presentation: true,
+        presentation: false,
       },
       {
         title: "Coalition Government",
         description: "Concept of Coalition Government, features, examples at national and state levels, merits and demerits, and types of coalitions.",
-        presentation: true,
+        presentation: false,
       },
     ],
     facultyQuestions: "Comprehensive questions covering constitutional principles and government structures.",
     avalonPredictions: "AI-predicted questions based on previous exam patterns and current syllabus focus areas.",
+    showAdditionalMaterials: false
   },
   {
     name: "Open Elective",
