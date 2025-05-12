@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import { subjectData } from "@/lib/data"
 
 export const metadata: Metadata = {
-  title: "Student Resource Hub | Jane University",
+  title: "Student Resource Hub | Jain University",
   description: "Academic resources for 4th semester Data Analytics students",
 }
 
@@ -12,7 +12,7 @@ export default function HomePage() {
     <main className="container mx-auto px-4 py-8 max-w-4xl">
       <header className="mb-8 text-center border-b-4 border-amber-600 pb-4">
         <h1 className="text-4xl font-bold font-mono mb-2">STUDENT RESOURCE HUB</h1>
-        <p className="text-xl font-mono">Jane University - 4th Semester Data Analytics</p>
+        <p className="text-xl font-mono">Jain University - 4th Semester Data Analytics</p>
       </header>
 
       <section className="mb-8 bg-amber-100 p-4 border-2 border-amber-600">
@@ -39,7 +39,7 @@ export default function HomePage() {
       </section>
 
       <footer className="mt-12 pt-4 border-t-2 border-gray-400 text-center font-mono text-sm">
-        <p>© {new Date().getFullYear()} Jane University - Data Analytics Department</p>
+        <p>© {new Date().getFullYear()} Jain University - Data Analytics Department</p>
         <p className="mt-1">Built with ♥ for students, by students</p>
       </footer>
     </main>
