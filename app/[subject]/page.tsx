@@ -64,13 +64,15 @@ export default function SubjectPage({ params }: { params: { subject: string } })
               </h3>
               <p className="font-mono mb-4">{module.description}</p>
               <div className="flex flex-wrap gap-3">
-                <a
-                  href={`/pdfs/${subject.slug}/modules/module${index + 1}-notes.pdf`}
-                  download
-                  className="retro-button"
-                >
-                  Download Notes
-                </a>
+                {module.showNotes !== false && (
+                  <a
+                    href={`/pdfs/${subject.slug}/modules/module${index + 1}-notes.pdf`}
+                    download
+                    className="retro-button"
+                  >
+                    Download Notes
+                  </a>
+                )}
                 {module.presentation && (
                   <a
                     href={`/pdfs/${subject.slug}/modules/module${index + 1}-presentation.pdf`}
@@ -131,10 +133,10 @@ export default function SubjectPage({ params }: { params: { subject: string } })
                   Module {moduleIndex + 1}: {module.title}
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mb-2">
-                  {[1, 2, 3, 4, 5].map((docNum) => (
+                  {Array.from({ length: subject.referenceDocsPerModule || 5 }, (_, i) => i + 1).map((docNum) => (
                     <a
                       key={docNum}
-                      href={`/pdfs/${subject.slug}/preparation/module${moduleIndex + 1}-ref${docNum}.pdf`}
+                      href={`/pdfs/${subject.slug}/modules/module${moduleIndex + 1}-ref${docNum}.pdf`}
                       download
                       className="retro-button text-sm py-1"
                     >

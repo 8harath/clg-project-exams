@@ -39,7 +39,6 @@ export default function HomePage() {
       </section>
 
       <footer className="mt-12 pt-4 border-t-2 border-gray-400 text-center font-mono text-sm">
-        <p>© {new Date().getFullYear()} Jain University - Data Analytics Department</p>
         <p className="mt-1">Built with ♥ for students, by students</p>
       </footer>
     </main>

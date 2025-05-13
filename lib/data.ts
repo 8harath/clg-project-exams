@@ -116,37 +116,42 @@ export const subjectData = [
     name: "Introduction to Data Analytics",
     slug: "data-analytics",
     modules: 5,
-    description:
-      "Fundamentals of data analytics including data collection, processing, analysis, and visualization. This course provides the foundation for advanced data science techniques.",
+    description: "This course introduces the core principles and methods of data analytics, covering the complete lifecycle from data collection to basic machine learning. It aims to build a solid foundation for students pursuing advanced studies or careers in data science.\n\nKey Areas Covered:\n\n• Fundamentals of data analytics\n• Data sourcing, cleaning, and preprocessing\n• Exploratory techniques for pattern discovery\n• Data visualization principles\n• Introduction to machine learning applications",
     moduleList: [
       {
-        title: "Introduction to Data Analytics",
-        description: "Overview, importance, and applications of data analytics.",
+        title: "Foundations of Data Analytics",
+        description: "An overview of data analytics, its significance in the modern world, and real-life applications across industries.",
         presentation: true,
+        showNotes: false
       },
       {
-        title: "Data Collection and Preprocessing",
-        description: "Methods for collecting, cleaning, and preparing data for analysis.",
+        title: "Data Collection and Preparation",
+        description: "Explores techniques for acquiring data from various sources, handling missing or inconsistent data, and preparing datasets for analysis.",
         presentation: true,
+        showNotes: false
       },
       {
-        title: "Exploratory Data Analysis",
-        description: "Techniques for exploring and understanding data patterns.",
+        title: "Exploratory Data Analysis (EDA)",
+        description: "Focuses on uncovering insights through summarization, pattern detection, and visual interpretation of datasets.",
         presentation: true,
+        showNotes: false
       },
       {
-        title: "Data Visualization",
-        description: "Principles and tools for effective data visualization.",
+        title: "Data Visualization Techniques",
+        description: "Covers the principles of creating impactful visualizations using modern tools to communicate analytical findings effectively.",
         presentation: true,
+        showNotes: false
       },
       {
-        title: "Introduction to Machine Learning",
-        description: "Basic concepts and applications of machine learning in data analytics.",
+        title: "Introductory Machine Learning for Analytics",
+        description: "Introduces machine learning basics with a focus on predictive modeling and how ML complements traditional analytics.",
         presentation: true,
+        showNotes: false
       },
     ],
     facultyQuestions: "Faculty-provided questions on data analytics concepts, methods, and applications.",
     avalonPredictions: "AI-predicted questions focusing on practical data analysis scenarios and techniques.",
+    referenceDocsPerModule: 1
   },
   {
     name: "Programming in Python",
