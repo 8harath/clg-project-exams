@@ -14,7 +14,7 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: "Student Resource Hub",
   description: "Academic resources for 4th semester Data Analytics students at Jain University",
-  generator: 'v0.dev'
+  generator: 'Made with ♥ by Bharath'
 }
 
 export default function RootLayout({

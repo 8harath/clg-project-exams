@@ -64,7 +64,7 @@ export default function SubjectPage({ params }: { params: { subject: string } })
               </h3>
               <p className="font-mono mb-4">{module.description}</p>
               <div className="flex flex-wrap gap-3">
-                {module.presentation && (
+                {module.showNotes && !subject.hasCombinedNotes && (
                   <a
                     href={`/pdfs/${subject.slug}/modules/module${index + 1}-notes.pdf`}
                     download
@@ -87,6 +87,22 @@ export default function SubjectPage({ params }: { params: { subject: string } })
           ))}
         </div>
       </section>
+
+      {subject.hasCombinedNotes && (
+        <section className="mb-8">
+          <div className="p-4 border-2 border-gray-800 bg-gray-100">
+            <h3 className="text-xl font-mono font-bold mb-3 border-b border-gray-400 pb-2">
+              DOWNLOAD ALL MODULE NOTES
+            </h3>
+            <p className="font-mono mb-4">
+              Download a comprehensive document containing notes for all modules.
+            </p>
+            <a href={`/pdfs/${subject.slug}/combined-notes.pdf`} download className="retro-button">
+              Download All Notes
+            </a>
+          </div>
+        </section>
+      )}
 
       <section className="mb-8">
         <h2 className="text-2xl font-mono font-bold mb-4 border-b-2 border-gray-400 pb-2">PREPARATION MATERIALS</h2>
