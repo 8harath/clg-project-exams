@@ -3,6 +3,7 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { Space_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { LoadingProvider } from "./providers"
 
 const spaceMono = Space_Mono({
   weight: ["400", "700"],
@@ -13,7 +14,7 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: "Student Resource Hub",
   description: "Academic resources for 4th semester Data Analytics students at Jain University",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -24,7 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${spaceMono.variable} bg-amber-50 text-gray-900 min-h-screen`}>
-        {children}
+        <LoadingProvider>
+          {children}
+        </LoadingProvider>
         <Analytics />
       </body>
     </html>
