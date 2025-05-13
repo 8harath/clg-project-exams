@@ -1,0 +1,21 @@
+{
+  "name": "Jain University Student Resource Hub",
+  "short_name": "Jain Resources",
+  "description": "Access comprehensive study materials and resources for Jain University students. Powered by Avalon, created by 8harath.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+} 

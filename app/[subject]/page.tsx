@@ -129,7 +129,7 @@ export default function SubjectPage({ params }: { params: { subject: string } })
             These questions are  based on previous exam patterns and current syllabus.
           </p>
           <a href={`/pdfs/${subject.slug}/preparation/avalon-predictions.pdf`} download className="retro-button">
-            Download Avalon Predictions
+            Download
           </a>
         </div>
 
