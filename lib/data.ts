@@ -95,77 +95,81 @@ export const subjectData = [
     slug: "probability-statistics",
     modules: 5,
     description:
-      "Introduction to probability theory and statistical methods essential for data analysis. This course covers probability distributions, hypothesis testing, and statistical inference.",
+      "A foundational course in probability theory and statistical methods essential for data analysis. This course covers univariate and bivariate analysis, probability rules, random variables, and statistical inference including estimation and hypothesis testing.",
     moduleList: [
       {
-        title: "Introduction to Probability",
-        description: "Basic concepts, axioms, and theorems of probability.",
+        title: "Univariate and Bivariate Data Analysis",
+        description:
+          "Types of data: qualitative and quantitative; Frequency distribution and classification; Graphical representation: histograms, cumulative curves; Central tendency: mean, median, mode (arithmetic, geometric, harmonic); Dispersion: range, mean deviation, variance, standard deviation; Bivariate correlation: scatter plots, Pearson and Spearman coefficients.",
+        presentation: true,
+      },
+      {
+        title: "Statistical Inference",
+        description:
+          "Introduction to inferential statistics; Parameter estimation; Hypothesis formulation and testing.",
+        presentation: true,
+      },
+      {
+        title: "Basics of Probability",
+        description:
+          "Random experiments, sample space, types of events; Axiomatic definition of probability; Basic problems and elementary computations.",
+        presentation: true,
+      },
+      {
+        title: "Probability Rules and Bayes' Theorem",
+        description:
+          "Addition and multiplication rules for probability; Independent and conditional events; Bayes' Theorem and practical applications.",
         presentation: true,
       },
       {
         title: "Random Variables",
-        description: "Discrete and continuous random variables, expectation, and variance.",
-        presentation: true,
-      },
-      {
-        title: "Probability Distributions",
-        description: "Common probability distributions and their applications.",
-        presentation: true,
-      },
-      {
-        title: "Sampling and Estimation",
-        description: "Sampling methods, point estimation, and interval estimation.",
-        presentation: true,
-      },
-      {
-        title: "Hypothesis Testing",
-        description: "Statistical hypothesis testing and significance levels.",
+        description:
+          "Discrete and continuous random variables; PMF (Probability Mass Function) and PDF (Probability Density Function); CDF (Cumulative Distribution Function) and its properties; Examples and applications.",
         presentation: true,
       },
     ] as Module[],
-    facultyQuestions: "Faculty-curated questions on probability concepts, distributions, and statistical methods.",
-    avalonPredictions: "AI-predicted questions focusing on problem-solving and statistical analysis techniques.",
+    facultyQuestions: "Curated questions by your instructors to align with expected exam patterns.",
+    avalonPredictions: "Predicted questions based on previous exams and current syllabus focus.",
   },
   {
     name: "Introduction to Data Analytics",
     slug: "data-analytics",
     modules: 5,
-    description: "This course introduces the core principles and methods of data analytics, covering the complete lifecycle from data collection to basic machine learning. It aims to build a solid foundation for students pursuing advanced studies or careers in data science.\n\nKey Areas Covered:\n\n• Fundamentals of data analytics\n• Data sourcing, cleaning, and preprocessing\n• Exploratory techniques for pattern discovery\n• Data visualization principles\n• Introduction to machine learning applications",
+    description: "This course builds foundational knowledge in data analytics, covering the complete process from data acquisition to introductory machine learning. It equips students with essential tools and techniques used in modern data-driven decision-making.\n\nKey Focus Areas:\n\n• Core concepts and types of analytics\n• Data sourcing, cleaning, and preparation\n• Exploratory data analysis (EDA) techniques\n• Principles of effective data visualization\n• Introduction to machine learning for analytics",
     moduleList: [
       {
         title: "Introduction to Data Analytics",
-        description: "• Definition and Scope: Introduction to analytics, differentiation between data, information, and knowledge.\n\n• Importance: Significance of data analytics in business, healthcare, finance, marketing, etc.\n\n• Types of Analytics:\n  - Descriptive Analytics\n  - Diagnostic Analytics\n  - Predictive Analytics\n  - Prescriptive Analytics\n\n• Data Analytics vs Data Science vs Business Intelligence\n\n• Analytics Lifecycle:\n  - Problem Definition\n  - Data Preparation\n  - Model Planning\n  - Model Building\n  - Deployment\n  - Feedback",
+        description: "What is Data Analytics? Importance across industries.\n\nTypes: Descriptive, Diagnostic, Predictive, Prescriptive.\n\nDifference: Data Analytics vs Data Science vs BI.\n\nAnalytics Lifecycle: Define → Prepare → Plan → Build → Deploy → Feedback.",
         presentation: true,
         showNotes: false
       },
       {
-        title: "Data Sources and Data Preprocessing",
-        description: "• Data Collection Methods:\n  - Primary and Secondary Data\n  - Web Scraping, APIs, Surveys, Sensors\n\n• Data Quality Issues:\n  - Missing Data, Noise, Inconsistency\n\n• Data Cleaning Techniques:\n  - Handling Missing Values\n  - Smoothing Noisy Data\n  - Data Transformation (Normalization, Discretization)\n  - Data Reduction (Dimensionality Reduction, Sampling)\n\n• ETL Process: Extract, Transform, Load pipeline",
+        title: "Data Sources & Preprocessing",
+        description: "Data Collection: Surveys, APIs, Web Scraping.\n\nIssues: Missing values, noise, inconsistency.\n\nCleaning: Imputation, normalization, discretization.\n\nETL Process: Extract → Transform → Load.",
         presentation: true,
         showNotes: false
       },
       {
         title: "Exploratory Data Analysis (EDA)",
-        description: "• Purpose: Understand data patterns, detect anomalies, test hypotheses\n\n• Techniques:\n  - Univariate Analysis: Mean, Median, Mode, Standard Deviation, Variance\n  - Bivariate and Multivariate Analysis\n\n• Visual Tools:\n  - Histograms, Boxplots, Scatterplots, Correlation Matrix\n\n• Outlier Detection and Treatment\n\n• Feature Engineering:\n  - Feature Extraction\n  - Feature Selection",
+        description: "Purpose: Spot patterns, outliers, insights.\n\nTechniques: Univariate, Bivariate, Multivariate analysis.\n\nTools: Histograms, Boxplots, Scatterplots, Correlation matrix.\n\nFeature Engineering: Extraction & Selection.",
         presentation: true,
         showNotes: false
       },
       {
         title: "Data Visualization",
-        description: "• Principles of Good Visualization:\n  - Clarity, Accuracy, Efficiency\n\n• Types of Charts:\n  - Bar Chart, Line Graph, Pie Chart, Heatmap, Treemap, Dashboard Elements\n\n• Tools for Visualization:\n  - Excel, Tableau, Power BI, Python (Matplotlib, Seaborn)\n\n• Storytelling with Data:\n  - Aligning visuals with audience and context\n\n• Design Guidelines:\n  - Color Usage, Chart Selection, Avoiding Misleading Visuals",
+        description: "Good Visuals: Clear, accurate, purposeful.\n\nChart Types: Bar, Line, Pie, Heatmap, Treemap.\n\nTools: Excel, Tableau, Power BI, Python (Matplotlib/Seaborn).\n\nStorytelling: Align visuals with audience needs.",
         presentation: true,
         showNotes: false
       },
       {
-        title: "Introduction to Machine Learning",
-        description: "• Basic ML Concepts:\n  - Supervised Learning vs Unsupervised Learning\n  - Features and Labels\n\n• Algorithms Overview:\n  - Supervised: Linear Regression, Decision Trees, k-NN\n  - Unsupervised: k-Means Clustering, Hierarchical Clustering\n\n• Model Evaluation Metrics:\n  - Accuracy, Precision, Recall, F1-Score, Confusion Matrix\n\n• Training vs Testing vs Validation\n\n• Role of ML in Analytics:\n  - Augmenting Decision Making\n  - Automation of Predictions",
+        title: "Intro to Machine Learning",
+        description: "Concepts: Supervised vs Unsupervised Learning.\n\nAlgorithms: Regression, Decision Trees, k-NN, k-Means.\n\nEvaluation: Accuracy, Precision, Recall, F1-Score.\n\nUse in Analytics: Predictive insights & automation.",
         presentation: true,
         showNotes: false
       },
     ],
     facultyQuestions: "Faculty-provided questions on data analytics concepts, methods, and applications.",
     avalonPredictions: "AI-predicted questions focusing on practical data analysis scenarios and techniques.",
-    referenceDocsPerModule: 1
   },
   {
     name: "Programming in Python",

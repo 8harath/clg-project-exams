@@ -123,10 +123,10 @@ export default function SubjectPage({ params }: { params: { subject: string } })
         {/* Avalon Predicted Questions Section */}
         <div className="p-4 border-2 border-gray-800 bg-gray-100 mb-6">
           <h3 className="text-xl font-mono font-bold mb-3 border-b border-gray-400 pb-2">
-            POTENTIAL QUESTIONS PREDICTED BY AVALON
+            POTENTIAL QUESTIONS 
           </h3>
           <p className="font-mono mb-4">
-            These questions are predicted by Avalon based on previous exam patterns and current syllabus.
+            These questions are  based on previous exam patterns and current syllabus.
           </p>
           <a href={`/pdfs/${subject.slug}/preparation/avalon-predictions.pdf`} download className="retro-button">
             Download Avalon Predictions
@@ -134,7 +134,8 @@ export default function SubjectPage({ params }: { params: { subject: string } })
         </div>
 
         {/* Additional Reference Materials Section */}
-        {subject.showAdditionalMaterials !== false && (
+        {/* Removed the entire section for Probability and Statistics */}
+        {/* {subject.showAdditionalMaterials !== false && (
           <div className="p-4 border-2 border-gray-800 bg-gray-100">
             <h3 className="text-xl font-mono font-bold mb-3 border-b border-gray-400 pb-2">
               ADDITIONAL REFERENCE MATERIALS
@@ -163,7 +164,7 @@ export default function SubjectPage({ params }: { params: { subject: string } })
               </div>
             ))}
           </div>
-        )}
+        )} */}
       </section>
 
       <footer className="mt-8 pt-4 border-t border-gray-300">
