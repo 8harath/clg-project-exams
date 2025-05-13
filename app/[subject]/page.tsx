@@ -64,7 +64,7 @@ export default function SubjectPage({ params }: { params: { subject: string } })
               </h3>
               <p className="font-mono mb-4">{module.description}</p>
               <div className="flex flex-wrap gap-3">
-                {module.showNotes !== false && (
+                {module.presentation && (
                   <a
                     href={`/pdfs/${subject.slug}/modules/module${index + 1}-notes.pdf`}
                     download
@@ -150,9 +150,39 @@ export default function SubjectPage({ params }: { params: { subject: string } })
         )}
       </section>
 
-      <footer className="mt-12 pt-4 border-t-2 border-gray-400 text-center font-mono text-sm">
-        <p>© {new Date().getFullYear()} Jain University - Data Analytics Department</p>
-        <p className="mt-1">Built with ♥ for students, by students</p>
+      <footer className="mt-12 pt-8 border-t-2 border-gray-400">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <div>
+            <h3 className="text-lg font-mono font-bold mb-4">About Avalon Group</h3>
+            <p className="font-mono text-sm text-gray-600 mb-4">
+              Avalon Group is dedicated to enhancing the educational experience through innovative technology solutions. 
+              Our AI-powered platform helps students access and understand their course materials more effectively.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-lg font-mono font-bold mb-4">Quick Links</h3>
+            <ul className="font-mono text-sm space-y-2">
+              <li><a href="/privacy-policy" className="text-amber-600 hover:text-amber-700">Privacy Policy</a></li>
+              <li><a href="/terms-of-service" className="text-amber-600 hover:text-amber-700">Terms of Service</a></li>
+              <li><a href="/cookie-policy" className="text-amber-600 hover:text-amber-700">Cookie Policy</a></li>
+              <li><a href="/accessibility" className="text-amber-600 hover:text-amber-700">Accessibility Statement</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-300 pt-6">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="text-center md:text-left mb-4 md:mb-0">
+              <p className="font-mono text-sm">© {new Date().getFullYear()} Avalon Group. All rights reserved.</p>
+              <p className="font-mono text-sm mt-1">Built with ♥ for students, by students</p>
+            </div>
+            <div className="flex space-x-4">
+              <a href="/contact" className="font-mono text-sm text-amber-600 hover:text-amber-700">Contact Us</a>
+              <a href="/faq" className="font-mono text-sm text-amber-600 hover:text-amber-700">FAQ</a>
+              <a href="/support" className="font-mono text-sm text-amber-600 hover:text-amber-700">Support</a>
+            </div>
+          </div>
+        </div>
       </footer>
     </main>
   )
