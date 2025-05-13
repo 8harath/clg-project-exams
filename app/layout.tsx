@@ -2,6 +2,7 @@ import type React from "react"
 import "./globals.css"
 import type { Metadata } from "next"
 import { Space_Mono } from "next/font/google"
+import { Analytics } from "@vercel/analytics/next"
 
 const spaceMono = Space_Mono({
   weight: ["400", "700"],
@@ -22,7 +23,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${spaceMono.variable} bg-amber-50 text-gray-900 min-h-screen`}>{children}</body>
+      <body className={`${spaceMono.variable} bg-amber-50 text-gray-900 min-h-screen`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
